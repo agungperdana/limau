@@ -1,0 +1,19 @@
+package ${packageName}.api.application;
+
+import java.util.List;
+import ${packageName}.api.application.Create${entityName}Command;
+import ${packageName}.api.application.${entityName}Query;
+import ${packageName}.api.application.${entityName}Data;
+
+public interface ${entityName}Application {
+
+    void create(Create${entityName}Command command);
+
+    void update(Update${entityName}Command command);
+
+    void delete(Delete${entityName}Command command);
+
+    ${entityName}Data getOne(${entityName}Query query);
+
+    List<${entityName}Data> getAll(${entityName}Query query);
+}

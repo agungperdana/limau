@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Limau
+    version: 0.0.1
+  shell:
+    interactive:
+      enabled: true
+  freemarker:
+    template-loader-path: classpath:/templates/.
+
+logging:
+  level:
+    root: off

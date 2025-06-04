@@ -1,0 +1,16 @@
+package ${packageName}.api.application;
+
+import java.lang.String
+
+public class Delete${entityName?cap_first}Command {
+
+    private String code;
+
+    public Delete${entityName}Command(String code){
+        this.code = code;
+    }
+
+    public String getCode() {
+        return this.code;
+    }
+}

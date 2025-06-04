@@ -22,4 +22,9 @@ gradle-app.setting
 
 # Ignore Gradle build output directory
 build
+.idea
 /.idea/
+/Shell.log
+/Limau.log
+/gen/Shell.log
+/gen/Limau.log

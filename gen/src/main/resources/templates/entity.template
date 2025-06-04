@@ -1,0 +1,41 @@
+package ${packageName}.domain;
+
+<#list imports as imp>
+${imp};
+</#list>
+
+public class ${entityName?cap_first} {
+
+    private String id;
+
+<#list fields as fld>
+    private ${fld[0]} ${fld[1]};
+</#list>
+
+    public ${entityName}(){}
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public ${entityName}(<#list fields as fld>${fld[0]} ${fld[1]}<#sep>,</#sep> </#list>){
+        <#list fields as fld>
+        this.${fld[1]} = ${fld[1]};
+        </#list>
+    }
+
+    <#list fields as fld>
+    public void set${fld[1]?cap_first}(${fld[0]} ${fld[1]}) {
+        this.${fld[1]} = ${fld[1]};
+    }
+
+    public ${fld[0]} get${fld[1]?cap_first}() {
+        return this.${fld[1]};
+    }
+
+    </#list>
+}
