@@ -14,11 +14,11 @@ entity -n Investment -p com.adp.inv -f code:String investor date:Instant amount:
 
 will result:
 
-Investment.java
-InvestmentRepository.java
-InvestmentApplication.java
-CreateInvestmentCommand.java
-UpdateInvestmentCommand.java
-DeleteInvestmentCommand.java
-InvestmentQuery.java
-InvestmentData.java
+- Investment.java
+- InvestmentRepository.java
+- InvestmentApplication.java
+- CreateInvestmentCommand.java
+- UpdateInvestmentCommand.java
+- DeleteInvestmentCommand.java
+- InvestmentQuery.java
+- InvestmentData.java
